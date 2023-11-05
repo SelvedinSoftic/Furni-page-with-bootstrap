@@ -8,9 +8,7 @@ body {
   color: #6a6a6a;
   background-color: #eff2f1;
 }
-.xl {
-    min-width: 1200px;
-}
+
 .navbar {
   padding: 20px 0;
   background-color: #3b5d50 !important;
@@ -30,7 +28,7 @@ body {
 }
 
 .navbar-toggler {
-  border: 1px solid transparent!important;
+  border: 1px solid transparent !important;
   padding: 4px 12px;
 }
 
@@ -42,32 +40,49 @@ body {
 }
 
 .navbar-nav {
-    margin-left: auto!important;
+  margin-left: auto !important;
 }
 
 .navbar-nav .nav-item .nav-link {
-padding: 8px;
-font-weight: 500;
+  padding: 8px 0;
+  font-weight: 500;
+}
+.custom-navbar-cta li:first-child .nav-link {
+  margin-right: 20px;
 }
 
-.navbar .navbar-cta .nav-link {
-    padding: 8px;
+
+.custom-navbar-cta {
+display: flex;
+flex-direction: row;
 }
 .navbar .navbar-cta li:first-child {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .navbar .navbar-cta {
-    margin-left: 40px!important;
+  margin-left: 40px !important;
 }
 
+@media (min-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    padding: 8px;
+  }
+  .custom-navbar-cta .nav-link {
+    padding: 8px;
+  
+  
+  }
+  .custom-navbar-cta {
+    margin-left: 40px!important;
+  }
+}
 
-@include media-breakpoint-up(xl) {
-    .navbar .container {
-        max-width: 1140px;
-    }
-    .navbar-nav .navbar-item .nav-link {
-     margin:0 15px!important;
-    
-    }
+@media (min-width: 1200px) {
+  .navbar .container {
+    max-width: 1140px;
+  }
+  #first-ul .nav-link {
+    margin: 0 15px !important;
+  }
 }
