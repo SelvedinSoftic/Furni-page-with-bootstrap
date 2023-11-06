@@ -9,7 +9,7 @@ body {
   background-color: #eff2f1;
 }
 
-.navbar {
+.navbar-expand-md {
   padding: 20px 0;
   background-color: #3b5d50 !important;
 }
@@ -51,10 +51,9 @@ body {
   margin-right: 20px;
 }
 
-
 .custom-navbar-cta {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .navbar .navbar-cta li:first-child {
   margin-right: 20px;
@@ -63,6 +62,67 @@ flex-direction: row;
 .navbar .navbar-cta {
   margin-left: 40px !important;
 }
+.navbar .custom-navbar-cta a {
+  cursor: pointer;
+}
+
+.hero {
+  background-color: #3b5d50;
+  padding: 98px 0;
+}
+.hero .container {
+  padding: 0 12px;
+  width: 100%;
+}
+.hero-text {
+  padding-top: 24px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 27.85px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.paragraph {
+  color: #fff;
+  opacity: 0.5;
+}
+.btn {
+  font-weight: 600;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+.btn-primary {
+  background-color: #f9bf29;
+  color: #2f2f2f;
+  margin-right: 8px;
+  border-color: #f9bf29;
+}
+
+.btn-white-outline {
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.image-border {
+  padding-top: 48px;
+  position: relative;
+}
+.white-dots {
+  position: absolute;
+  width: 35%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.couch {
+  width: 90%;
+  position: relative;
+  z-index: 2;
+}
 
 @media (min-width: 768px) {
   .navbar-nav .nav-item .nav-link {
@@ -70,12 +130,32 @@ flex-direction: row;
   }
   .custom-navbar-cta .nav-link {
     padding: 8px;
-  
-  
   }
   .custom-navbar-cta {
-    margin-left: 40px!important;
+    margin-left: 40px !important;
   }
+  .hero {
+    padding: 162px 0;
+  }
+  h1 {
+    font-size: 33.5px;
+  }
+  .home {
+    border-bottom: 5px solid #f9bf29;
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 5px solid #f9bf29;
+  }
+
+  .btn-primary:hover {
+    background-color: #f8b810;
+    color: #2f2f2f;
+    border-color: #f8b810;
+  }
+}
+.btn-white-outline:hover {
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
 }
 
 @media (min-width: 1200px) {
@@ -84,5 +164,8 @@ flex-direction: row;
   }
   #first-ul .nav-link {
     margin: 0 15px !important;
+  }
+  h1 {
+    font-size: 40px;
   }
 }
